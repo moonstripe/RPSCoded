@@ -57,7 +57,7 @@ function rockPlayer() {
 
 function paperPlayer() {
     const aiChoice = rpsChoices[Math.floor(Math.random() * rpsChoices.length)];
-    var playerChoice = "rock"
+    var playerChoice = "paper"
     
     var gameResult = shoot(aiChoice, playerChoice);
 
@@ -79,7 +79,7 @@ function paperPlayer() {
 }
 function scissorsPlayer() {
     const aiChoice = rpsChoices[Math.floor(Math.random() * rpsChoices.length)];
-    var playerChoice = "rock"
+    var playerChoice = "scissors"
     
     var gameResult = shoot(aiChoice, playerChoice);
 
