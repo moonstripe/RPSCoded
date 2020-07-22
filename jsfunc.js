@@ -62,6 +62,7 @@ function paperPlayer() {
 
     if (gameResult === "t") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You tied with the Computer, try again.";
+        document.getElementById("score").innerHTML = wins + " out of "+games;
     } else if (gameResult === "w") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
@@ -83,6 +84,7 @@ function scissorsPlayer() {
 
     if (gameResult === "t") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You tied with the Computer, try again.";
+        document.getElementById("score").innerHTML = wins + " out of "+games;
     } else if (gameResult === "w") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
@@ -90,6 +92,7 @@ function scissorsPlayer() {
         document.getElementById("score").innerHTML = wins + " out of "+games;
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
+        document.getElementById("score").innerHTML = wins + " out of "+games;
         losses++;
         games++;
         document.getElementById("score").innerHTML = wins + " out of "+games;
