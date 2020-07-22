@@ -38,6 +38,7 @@ function rockPlayer() {
 
     if (gameResult === "t") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You tied with the Computer, try again.";
+        document.getElementById("score").innerHTML = wins + " out of "+games;
     } else if (gameResult === "w") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
