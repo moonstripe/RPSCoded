@@ -37,7 +37,7 @@ function rockPlayer() {
     var gameResult = shoot(aiChoice, playerChoice);
 
     if (gameResult === "t") {
-        document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Shoot again!";
+        document.getElementById("demo").innerHTML = "AI chose "+aiChoice+", too. Shoot again!";
         document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
@@ -73,7 +73,7 @@ function paperPlayer() {
     var gameResult = shoot(aiChoice, playerChoice);
 
     if (gameResult === "t") {
-        document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Shoot again!";
+        document.getElementById("demo").innerHTML = "AI chose "+aiChoice+", too. Shoot again!";
         document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
@@ -106,7 +106,7 @@ function scissorsPlayer() {
     var gameResult = shoot(aiChoice, playerChoice);
 
     if (gameResult === "t") {
-        document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Shoot again!";
+        document.getElementById("demo").innerHTML = "AI chose "+aiChoice+", too. Shoot again!";
         document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
