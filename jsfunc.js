@@ -1,7 +1,3 @@
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-  }
-
 var rpsChoices = ["rock", "paper", "scissors"];
 var gameStates = ["w", "l", "t"];
 
