@@ -36,7 +36,9 @@ function rockPlayer() {
 
     if (gameResult === "t") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+", too. Shoot again!";
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        ties++;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
+        tieLength++;
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
         document.getElementById("p_btn").style.backgroundColor = "#555";
@@ -44,17 +46,19 @@ function rockPlayer() {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
         games++;
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        var tieLength = 0;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         document.getElementById("r_btn").style.backgroundColor = "green";
         document.getElementById("s_btn").style.backgroundColor = "red";
         document.getElementById("p_btn").style.backgroundColor = "#555";
 
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         losses++;
         games++;
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        var tieLength = 0;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         document.getElementById("r_btn").style.backgroundColor = "red";
         document.getElementById("p_btn").style.backgroundColor = "green";
         document.getElementById("s_btn").style.backgroundColor = "#555";
@@ -72,7 +76,10 @@ function paperPlayer() {
 
     if (gameResult === "t") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+", too. Shoot again!";
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        ties++;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
+        ties++;
+        tieLength++;
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
         document.getElementById("p_btn").style.backgroundColor = "#555";
@@ -80,17 +87,19 @@ function paperPlayer() {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
         games++;
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        var tieLength = 0;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         document.getElementById("p_btn").style.backgroundColor = "green";
         document.getElementById("r_btn").style.backgroundColor = "red";
         document.getElementById("s_btn").style.backgroundColor = "#555";
 
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         losses++;
         games++;
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        var tieLength = 0;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         document.getElementById("p_btn").style.backgroundColor = "red";
         document.getElementById("s_btn").style.backgroundColor = "green";
         document.getElementById("r_btn").style.backgroundColor = "#555";
@@ -105,7 +114,9 @@ function scissorsPlayer() {
 
     if (gameResult === "t") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+", too. Shoot again!";
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
+        ties++;
+        tieLength++;
         document.getElementById("r_btn").style.backgroundColor = "#555";
         document.getElementById("s_btn").style.backgroundColor = "#555";
         document.getElementById("p_btn").style.backgroundColor = "#555";
@@ -113,17 +124,20 @@ function scissorsPlayer() {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". You won against the computer!";
         wins++;
         games++;
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        var tieLength = 0;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         document.getElementById("s_btn").style.backgroundColor = "green";
         document.getElementById("p_btn").style.backgroundColor = "red";
         document.getElementById("r_btn").style.backgroundColor = "#555";
 
     } else if (gameResult === "l") {
         document.getElementById("demo").innerHTML = "AI chose "+aiChoice+". Better luck next time...";
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        ties++;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         losses++;
         games++;
-        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games.";
+        var tieLength = 0;
+        document.getElementById("score").innerHTML = "You've won "+wins+" out of "+games+" games. You've tied "+ties+" times.";
         document.getElementById("s_btn").style.backgroundColor = "red";
         document.getElementById("r_btn").style.backgroundColor = "green";
         document.getElementById("p_btn").style.backgroundColor = "#555";
