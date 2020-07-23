@@ -25,6 +25,8 @@ function shoot(ai, player) {
 let games = 0;
 let wins = 0;
 let losses = 0;
+let ties = 0;
+let tieLength = 0;
 
 function rockPlayer() {
     const aiChoice = rpsChoices[Math.floor(Math.random() * rpsChoices.length)];
